@@ -1,0 +1,21 @@
+[package]
+name = "portkullis-firewall-wasm-module"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = []
+anomaly_detection_engine = ["prost"]
+
+[dependencies]
+log = "0.4.27"
+prost = { version = "0.13", optional = true }
+proxy-wasm = "0.2.3"
+signature_detection_engine = { path = "../signature_detection_engine" }
+
+[build-dependencies]
+tonic-build = "0.12"

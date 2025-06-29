@@ -1,0 +1,2 @@
+# ignore temporary/custom data for vector database
+*.json

@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "anomaly_detection_engine",
+    "signature_detection_engine",
+    "wasm_module",
+    "xtask",
+]
+resolver = "3"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+panic = "abort"
+strip = "debuginfo"

@@ -1,0 +1,3 @@
+Makefile linguist-detectable=false
+Containerfile linguist-detectable=false
+*.sh linguist-detectable=false
